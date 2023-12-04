@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a30bc45d-215f-4d36-b004-f0c6d18f1f2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AOC-2023.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/DayOne.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +77,9 @@
       <workItem from="1701414700675" duration="1000" />
       <workItem from="1701415380307" duration="2939000" />
       <workItem from="1701522711347" duration="13095000" />
-      <workItem from="1701584045830" duration="10925000" />
+      <workItem from="1701584045830" duration="11586000" />
+      <workItem from="1701666468541" duration="201000" />
+      <workItem from="1701694374922" duration="305000" />
     </task>
     <servers />
   </component>
