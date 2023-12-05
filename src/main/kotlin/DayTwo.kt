@@ -49,9 +49,29 @@ Determine which games would have been possible if the bag had been loaded with o
 fun dayTwo(text: String) {
     val gameData = parseGameData(text)
     val loadedBalls = mapOf(Pair("red", 12),Pair("green", 13), Pair("blue", 14))
-//    println(loadedBalls)
     println(calulateSumOfPossibleGameIds(gameData, loadedBalls))
-//    println(gameData)
+    println(sumOfPowerOf(calculateMinimumSetOfCubes(gameData)))
+}
+
+fun sumOfPowerOf(minimumSetOfCubes: List<List<Int>>): Int {
+    val list = minimumSetOfCubes.map {
+        it.reduce { acc, i -> acc * i }
+    }
+
+    return list.reduce { acc, i -> acc + i }
+}
+
+fun calculateMinimumSetOfCubes(gameData: List<Pair<String, List<Pair<String, String>>>>): List<List<Int>> {
+    val g = gameData.map{ it ->
+        val setOfMinimumCube = mutableMapOf(Pair("red", 0), Pair("green", 0), Pair("blue", 0))
+        it.second.forEach {
+            if(setOfMinimumCube.getValue(it.first) < it.second.toInt()) {
+                setOfMinimumCube[it.first] = it.second.toInt()
+            }
+        }
+        setOfMinimumCube.map{it.value}
+    }
+    return g
 }
 
 fun calulateSumOfPossibleGameIds(
@@ -81,9 +101,8 @@ fun parseGameData(text: String): List<Pair<String, List<Pair<String, String>>>> 
             val g = game.split(": ")
             val key = g[0].split(" ")[1]
             val value = g[1].split("; ")
-//                .map{ it.split(", ")
                 .flatMap{ it.split(", ")
-                .map {it ->
+                .map {
                     val a = it.split(" ")
                     Pair(a[1], a[0])
                 }
