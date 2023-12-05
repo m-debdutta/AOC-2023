@@ -24,8 +24,7 @@ Consider your entire calibration document. What is the sum of all the calibratio
 19798992 -> 3181617 -> 102141 -> 243 -> 54
  */
 
-fun dayOne(fileName: String) {
-    val text = File("./src/main/resources/$fileName").readText()
+fun dayOne(text: String) {
     val regex = "\\d".toRegex()
     val strings: List<String> = text.split('\n')
     val listOfCalibrationValues = findCalibrationValues(strings)
